@@ -1,0 +1,57 @@
+  .hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-attachment: fixed;
+  }
+  
+  .hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://www.candidstudios.net/?seraph_accel_gci=wp-content%2Fuploads%2F2024%2F02%2FPosing-Prompts-for-Memorable-Wedding-Day-Portraits-2253555433.jpg&n=fSKA4EDFxVUqSp6vcvg8Bg');
+    background-size: cover;
+    background-position: center;
+    opacity:0.9; 
+    z-index: -1; 
+    background-attachment: fixed;
+  }
+  
+  
+  .hero-content {
+    text-align: center;
+    color: white;
+    
+  }
+  
+  .hero h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-btn {
+    padding: 0.8rem 2rem;
+    border: 2px solid #FF6B6B;
+    background-color: transparent;
+    color: #FF6B6B;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .hero-btn:hover {
+    background-color: #FF6B6B;
+    color: white;
+  }
+  

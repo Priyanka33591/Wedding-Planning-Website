@@ -1,0 +1,116 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+:root{
+  --main-color:#f45866;
+  --primary-color: #404068;
+  --white:#fff;
+  --bg: #f7f0ed;
+  --light-black:#333;
+  --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  transition: .2s linear;
+  text-transform: capitalize;
+}
+
+html{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+html::-webkit-scrollbar{
+  width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+  background-color: var(--white);
+}
+
+html::-webkit-scrollbar-thumb{
+  background-color: var(--primary-color);
+  border-radius: 5rem;
+}
+
+body{
+  background: var(--bg); 
+}
+
+body.active{
+ --primary-color:#fff;
+ --light-black:#eee;
+ --white:#333;
+ --bg:#222;
+ --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.4);
+}
+
+section{
+  padding: 3rem 9%;
+}
+
+.heading{
+  text-align: center;
+  color:var(--primary-color);
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+  font-size: 4rem;
+  margin-top: 2rem;
+}
+
+.btn {
+   display: inline-block;
+   margin-top: 1rem;
+   padding: .8rem 2.8rem;
+   border-radius: 5rem;
+   border-top-left-radius: 0;
+   border: 0.2rem solid var(--main-color);
+   cursor: pointer;
+   color: var(--main-color);
+   font-size: 1.7rem;
+   overflow: hidden;
+   z-index: 0;
+   position: relative;
+ }
+ 
+ .btn::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background: var(--main-color);
+   z-index: -1;
+   -webkit-transition: .2s linear;
+   transition: .2s linear;
+   clip-path: circle(0% at 0% 5%);
+ }
+ 
+ .btn:hover::before {
+    clip-path: circle(100%);
+ }
+ 
+ .btn:hover {
+   color: var(--white);
+ }

@@ -1,0 +1,81 @@
+.pricing-container {
+    text-align: center;
+    padding: 100px;
+    background-color: #fdf0ec;
+    
+  }
+  
+  .pricing-header {
+    font-size: 2rem;
+    color: #343b6d;
+    margin-bottom: 30px;
+  }
+  
+  .plans {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+  
+  .plan {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-bottom: 20px;
+    width: 250px;
+    text-align: center;
+  }
+  
+  .plan-title {
+    background-color: #f05454;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 10px 0;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .plan-price {
+    font-size: 2rem;
+    color: #333;
+    margin: 20px 0;
+  }
+  
+  .plan-price span {
+    font-size: 0.8rem;
+    color: #888;
+  }
+  
+  .plan-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .plan-features li {
+    margin: 10px 0;
+  }
+  
+  .included {
+    color: #27ae60;
+    font-weight: bold;
+  }
+  
+  .not-included {
+    color: #e74c3c;
+    text-decoration: line-through;
+  }
+  
+  .buy-now {
+    background-color: #f05454;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .buy-now:hover {
+    background-color: #d43c3c;
+  }
+  

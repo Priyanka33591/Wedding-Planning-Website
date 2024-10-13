@@ -1,0 +1,37 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo span {
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+  color: #4b5563;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links li {
+  color: #4b5563;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-links li:hover {
+  color: #FF6B6B;
+}
