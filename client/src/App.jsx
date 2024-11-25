@@ -9,6 +9,7 @@ import PricingTable from "./components/PricingTable";
 import Gallery from "./components/Gallery";
 import Team from "./components/Team";
 import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/pricing" element={<PricingTable />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/team" element={<Team />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
      
     </Router>

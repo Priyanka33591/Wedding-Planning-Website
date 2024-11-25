@@ -9,7 +9,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="logo">
         <FaUserCircle size={30} style={{ color: '#FF6B6B' }} />
-        <span>Planner</span>
+        <span>GLA Wedding Planners</span>
       </div>
       <ul className="nav-links">
       <li><Link to="/">Home</Link></li>

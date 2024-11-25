@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import './PricingTable.css';
 
 const plans = [
@@ -23,6 +24,12 @@ const plans = [
 ];
 
 const PricingTable = () => {
+  const navigate = useNavigate();
+
+  const handleBuyNow = () => {
+    navigate("/contact");
+  };
+
   return (
     <div className="pricing-container">
       <h2 className="pricing-header">Membership Plan</h2>
@@ -44,7 +51,7 @@ const PricingTable = () => {
                 <li key={i} className="not-included">{feature}</li>
               ))}
             </ul>
-            <button className="buy-now">Buy Now</button>
+            <button className="buy-now" onClick={handleBuyNow}>Buy Now</button>
           </div>
         ))}
       </div>
