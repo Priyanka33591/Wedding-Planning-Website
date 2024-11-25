@@ -6,12 +6,12 @@ const cors = require("cors");
 const app = express();
 const PORT = 5000;
 
-// Middleware
+
 app.use(cors());
 app.use(bodyParser.json());
 app.use(express.json());
 
-// MongoDB Connection
+
 mongoose
   .connect("mongodb://127.0.0.1:27017/contactFormDB", {
     useNewUrlParser: true,
@@ -20,7 +20,7 @@ mongoose
   .then(() => console.log("Connected to MongoDB"))
   .catch((error) => console.error("MongoDB connection error:", error));
 
-// Define a Mongoose Schema
+
 const ContactSchema = new mongoose.Schema({
   name: { type: String, required: true },
   email: { type: String, required: true },
@@ -31,15 +31,14 @@ const ContactSchema = new mongoose.Schema({
   message: { type: String, required: true },
 });
 
-// Create a Mongoose Model
+
 const Contact = mongoose.model("Contact", ContactSchema);
 
-// Route to handle form submission
+
 app.post("/submit-form", async (req, res) => {
   const { name, email, number, date, address, plan, message } = req.body;
 
   try {
-    // Save data to MongoDB
     const newContact = new Contact({
       name,
       email,
@@ -57,8 +56,6 @@ app.post("/submit-form", async (req, res) => {
     res.status(500).json({ success: false, message: "Error saving form data." });
   }
 });
-
-// Start the Server
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });

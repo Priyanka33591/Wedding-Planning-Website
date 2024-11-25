@@ -11,13 +11,14 @@ const Contact = () => {
     number: "",
     date: "",
     address: "",
-    plan: "", // No default plan
+    plan: "", 
+    foodPreference: "", 
+    weddingTime: "", 
     message: "",
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  // Populate selectedPlan from location.state
   useEffect(() => {
     if (location.state?.plan) {
       setFormData((prevData) => ({
@@ -27,12 +28,12 @@ const Contact = () => {
     }
   }, [location.state]);
 
-  // Handle form field changes
+  
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // Handle form submission
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -46,9 +47,11 @@ const Contact = () => {
         number: "",
         date: "",
         address: "",
-        plan: "", // Reset plan
+        plan: "",
+        foodPreference: "",
+        weddingTime: "",
         message: "",
-      });
+      }); 
     } catch (error) {
       console.error("Error:", error);
       alert("Error submitting the form. Please try again.");
@@ -60,7 +63,6 @@ const Contact = () => {
   return (
     <div className="contact-container">
       <h2>Contact Us</h2>
-      {/* {formData.plan && <p>You have selected the <strong>{formData.plan}</strong> plan.</p>} */}
       <form className="contact-form" onSubmit={handleSubmit}>
         <div>
           <input
@@ -112,12 +114,37 @@ const Contact = () => {
             onChange={handleChange}
             required
           >
-            <option value="" disabled>
-              Select a Plan
-            </option>
+            <option value="" disabled>Select a Plan</option>
             <option value="Basic">Basic Plan</option>
             <option value="Standard">Standard Plan</option>
             <option value="Premium">Premium Plan</option>
+          </select>
+        </div>
+        <div>
+          <label>Food Preference:</label>
+          <select
+            name="foodPreference"
+            value={formData.foodPreference}
+            onChange={handleChange}
+            required
+          >
+            <option value="" disabled>Select Food Type</option>
+            <option value="Veg">Veg</option>
+            <option value="Non-Veg">Non-Veg</option>
+            <option value="Both">Both</option>
+          </select>
+        </div>
+        <div>
+          <label>Wedding Time:</label>
+          <select
+            name="weddingTime"
+            value={formData.weddingTime}
+            onChange={handleChange}
+            required
+          >
+            <option value="" disabled>Select Wedding Time</option>
+            <option value="Day">Day</option>
+            <option value="Night">Night</option>
           </select>
         </div>
         <textarea
