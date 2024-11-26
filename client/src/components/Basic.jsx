@@ -3,11 +3,11 @@ import './Gallery.css';
 
 const imageArray = [
   'https://th.bing.com/th/id/OIP.7AzqjeRS5_1l8Z6ma1JVgAHaE8?rs=1&pid=ImgDetMain',
-  'https://i.pinimg.com/originals/4e/2e/c5/4e2ec5651d798935907343a16619b904.jpg',
-  'https://i.pinimg.com/474x/e0/ce/a3/e0cea3b65251f14510b2652d97356bfb.jpg',
+  'https://i.pinimg.com/736x/09/da/f0/09daf068c69372946e1efea5cacf1c2d.jpg',
+  'https://th.bing.com/th/id/OIP.alV0-b6p8m9Q881_shQ6VgAAAA?rs=1&pid=ImgDetMain',
   'https://th.bing.com/th/id/OIP.8N3EazGyczHRNjn67k-7pwHaE7?rs=1&pid=ImgDetMain',
   'https://th.bing.com/th/id/OIP.hpAq-6Yj7ynSnGWkwLmu0AHaE8?w=720&h=480&rs=1&pid=ImgDetMain',
-  'https://i.pinimg.com/736x/41/e7/2d/41e72da8dc04262b07bdebac325f2232.jpg'
+  'https://i.pinimg.com/originals/95/53/a7/9553a7a0946276852fd21d979d5bc8c0.jpg'
 
 ];
 
