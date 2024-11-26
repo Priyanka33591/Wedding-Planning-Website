@@ -12,13 +12,14 @@ import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
+import Basic from "./components/Basic";
 
 function App() {
   return (
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={ <><Hero /> <About /><ServicesSection /> <PricingTable /><Gallery /> <Team />  <Footer /> </> } />
+        <Route path="/" element={ <><Hero /> <About /><ServicesSection /> <PricingTable /> <Basic/>  <Gallery /> <Team />  <Footer /> </> } />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<ServicesSection />} />
         <Route path="/pricing" element={<PricingTable />} />
