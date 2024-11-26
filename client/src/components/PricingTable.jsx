@@ -50,7 +50,6 @@ const plans = [
 const PricingTable = () => {
   const navigate = useNavigate();
 
-  // Redirect to the Contact page with the selected plan
   const handleBuyNow = (planTitle) => {
     navigate("/contact", { state: { plan: planTitle } });
   };
