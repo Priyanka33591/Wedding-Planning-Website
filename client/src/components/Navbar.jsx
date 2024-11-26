@@ -1,15 +1,17 @@
 import React from 'react';
 import { FaUserCircle } from 'react-icons/fa';
-import { FaMoon } from 'react-icons/fa';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
+  const navigate = useNavigate();
+
   return (
     <nav className="navbar">
       <div className="logo">
         <FaUserCircle size={30} style={{ color: '#FF6B6B' }} />
-        <span>GLA Wedding Planners</span>
+        <span>Wedding Planners</span>
       </div>
       <ul className="nav-links">
       <li><Link to="/">Home</Link></li>
@@ -19,8 +21,10 @@ const Navbar = () => {
         <li><Link to="/gallery">Gallery</Link></li>
         <li><Link to="/team">Team</Link></li>
       </ul>
-      <button className='signup'>Sign UP</button>
-      <button className='signin'>Sign IN</button>
+      <div>
+      <button className='signup' onClick={() => navigate('/signup')}>Sign UP</button>
+      <button className='signin' onClick={() => navigate('/login')}>Sign IN</button>
+      </div>
     </nav>
   );
 };

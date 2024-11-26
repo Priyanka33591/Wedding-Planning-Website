@@ -43,8 +43,8 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 20px;
-  /* margin-left: 20px; */
+  align-items: center;
+  margin-top: 15px;
 }
 
 .signin {
@@ -54,5 +54,14 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: 15px;
+  margin-left: 10px;
 }
+
+.signin:hover {
+  background-color: #d43c3c;
+  };
+
+.login:hover {
+    background-color: #d43c3c;
+};

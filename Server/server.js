@@ -2,6 +2,11 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+const dotenv = require('dotenv');
+const authRoutes = require('./routes/auth');
+
+
+dotenv.config();
 
 const app = express();
 const PORT = 5000;
@@ -56,6 +61,16 @@ app.post("/submit-form", async (req, res) => {
     res.status(500).json({ success: false, message: "Error saving form data." });
   }
 });
+
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
+
+mongoose.connect("mongodb://127.0.0.1:27017/signupWD", { uuseNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => console.log('Connected to MongoDB'))
+  .catch((err) => console.log('Error connecting to MongoDB:', err));
+  
+  // Routes
+  app.use('/api/auth', authRoutes);
