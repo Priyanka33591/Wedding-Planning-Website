@@ -19,7 +19,8 @@ const Navbar = () => {
         <li><Link to="/gallery">Gallery</Link></li>
         <li><Link to="/team">Team</Link></li>
       </ul>
-      <FaMoon size={24} style={{ color: '#FF6B6B' }} />
+      <button className='signup'>Sign UP</button>
+      <button className='signin'>Sign IN</button>
     </nav>
   );
 };

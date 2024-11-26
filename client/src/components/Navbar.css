@@ -35,3 +35,24 @@
 .nav-links li:hover {
   color: #FF6B6B;
 }
+
+.signup {
+  background-color: #f05454;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  /* margin-left: 20px; */
+}
+
+.signin {
+  background-color: #f05454;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
