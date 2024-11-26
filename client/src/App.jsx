@@ -13,13 +13,14 @@ import Contact from "./components/Contact";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import Basic from "./components/Basic";
+import Standard from "./components/Standard";
 
 function App() {
   return (
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={ <><Hero /> <About /><ServicesSection /> <PricingTable /> <Basic/>  <Gallery /> <Team />  <Footer /> </> } />
+        <Route path="/" element={ <><Hero /> <About /><ServicesSection /> <PricingTable /> <Basic/> <Standard/> <Gallery /> <Team />  <Footer /> </> } />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<ServicesSection />} />
         <Route path="/pricing" element={<PricingTable />} />
