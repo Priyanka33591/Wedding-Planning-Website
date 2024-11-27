@@ -22,7 +22,7 @@ const teamMembers = [
     {
       name: 'Shreyanshi Jain',
       role: 'Wedding Planner',
-      image: 'https://randomuser.me/api/portraits/women/2.jpg'  
+      image: 'https://res.cloudinary.com/dqbhc0l7s/image/upload/v1732704911/brytddwlrqfumqgekrnq.jpg'  
     }
   ];
   
