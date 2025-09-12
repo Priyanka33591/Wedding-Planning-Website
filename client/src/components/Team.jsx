@@ -12,12 +12,12 @@ const teamMembers = [
     {
       name: 'Priyanka Yadav',
       role: 'Wedding Planner',
-      image: 'https://media.licdn.com/dms/image/v2/D5603AQEoqBMr8QVIaw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1712638033700?e=1738195200&v=beta&t=rNpt5jYwU9QcfVbblEgKbFACNYC5tTwhonSUKm7MjQQ' 
+      image: 'https://media.licdn.com/dms/image/v2/D5603AQGE-vtE_SgwCQ/profile-displayphoto-shrink_800_800/B56ZY5tkPEGcAc-/0/1744724968842?e=1760572800&v=beta&t=bM15NefqIHBEspYgGlsRiGHS4_z-dfw0BuJpwYCjv7A'
     },
     {
       name: 'Abhishek Singh',
       role: 'Wedding Planner',
-      image: 'https://media.licdn.com/dms/image/v2/D5603AQGNYFdoqcUtKw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1723719184048?e=1738195200&v=beta&t=vvaH_fNz4eT5Vc43gRBKII1xA760Lhi6mZD_Lb067b4'
+      image: 'https://media.licdn.com/dms/image/v2/D5603AQEpB-LYcBXj6A/profile-displayphoto-crop_800_800/B56Zkq46k8I8AI-/0/1757361187932?e=1760572800&v=beta&t=J8KxE6xaQMi6RktlqSra1nq4xBKdOCQTKNoGWRtPD3I'
     },
     {
       name: 'Shreyanshi Jain',
